@@ -20,7 +20,7 @@ export const personalInfo = {
   ],
   college: "Shri Shankaracharya Technical Campus",
   collegeUrl: "https://sstc.ac.in/",
-  avatarUrl: "/assets/nikhil.jpg",
+  avatarUrl: "./assets/nikhil.jpg",
   status: "Open for Remote Roles",
   aboutText: "Building scalable backend systems and full-stack applications with Python, FastAPI, and React.",
   aboutText1: "I’m Nikhil Dhankar, based in Bhilai, Chhattisgarh, India. I graduated with a B.Tech in Computer Science (CGPA: 8.33) from ",
