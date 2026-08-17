@@ -3,15 +3,8 @@
 import { useState, useEffect } from "react";
 import { Terminal, Code2, Github, Star } from "lucide-react";
 
-type Props = {
-  terminalMode: boolean;
-  setTerminalMode: (v: boolean) => void;
-  uiType?: "landing" | "modular";
-  setUiType?: (v: "landing" | "modular") => void;
-};
-
-const Navbar = ({ terminalMode, setTerminalMode, uiType, setUiType }: Props) => {
-  const [stars, setStars] = useState<number | null>(null);
+const Navbar = ({ terminalMode, setTerminalMode, uiType, setUiType }) => {
+  const [stars, setStars] = useState(null);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

@@ -19,21 +19,21 @@ const App = () => {
     return false;
   });
   
-  const [uiType, setUiType] = useState<"landing" | "modular">(() => {
+  const [uiType, setUiType] = useState(() => {
     if (typeof window !== "undefined") {
-      return (localStorage.getItem("ui-type") as "landing" | "modular") || "landing";
+      return localStorage.getItem("ui-type") || "landing";
     }
     return "landing";
   });
 
-  const handleTerminalToggle = (value: boolean) => {
+  const handleTerminalToggle = (value) => {
     setTerminalMode(value);
     localStorage.setItem("terminal-mode", String(value));
   };
 
   const [activeTab, setActiveTab] = useState("home");
 
-  const handleUiToggle = (type: "landing" | "modular") => {
+  const handleUiToggle = (type) => {
     setUiType(type);
     localStorage.setItem("ui-type", type);
   };

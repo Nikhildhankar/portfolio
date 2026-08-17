@@ -6,9 +6,9 @@ import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 const About = () => {
-  const [expandedIds, setExpandedIds] = useState<Record<number, boolean>>({});
+  const [expandedIds, setExpandedIds] = useState({});
 
-  const toggleExpand = (index: number) => {
+  const toggleExpand = (index) => {
     setExpandedIds((prev) => ({ ...prev, [index]: !prev[index] }));
   };
 

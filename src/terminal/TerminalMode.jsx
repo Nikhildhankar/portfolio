@@ -5,23 +5,12 @@ import { getCommandData } from "./CommandData";
 import { isGlowCommand, isValidCommand } from "./data/commands";
 import { terminalThemes } from "./data/themes";
 
-type Line = {
-  text?: string;
-  type?: "info" | "error" | "success";
-  component?: React.ReactNode;
-};
-
-type Props = {
-  setTerminalMode: (v: boolean) => void;
-  setUiType: (v: "landing" | "modular") => void;
-};
-
-const TerminalMode = ({ setTerminalMode, setUiType }: Props) => {
-  const [history, setHistory] = useState<Line[]>([]);
+const TerminalMode = ({ setTerminalMode, setUiType }) => {
+  const [history, setHistory] = useState([]);
   const [input, setInput] = useState("");
   const [glow, setGlow] = useState(false);
   const commandData = getCommandData(setTerminalMode);
-  const [commandHistory, setCommandHistory] = useState<string[]>(() => {
+  const [commandHistory, setCommandHistory] = useState(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("terminalHistory");
       if (saved) {
@@ -34,17 +23,17 @@ const TerminalMode = ({ setTerminalMode, setUiType }: Props) => {
     }
     return [];
   });
-  const [historyIndex, setHistoryIndex] = useState<number | null>(null);
+  const [historyIndex, setHistoryIndex] = useState(null);
   const [cursorPos, setCursorPos] = useState(0);
-  const terminalRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const terminalRef = useRef(null);
+  const inputRef = useRef(null);
 
   const [theme, setTheme] = useState("blackboard");
-  const currentTheme = terminalThemes[theme];
+  const currentTheme = terminalThemes[theme] || terminalThemes.blackboard;
 
-  const pushLine = (line: Line) => setHistory((prev) => [...prev, line]);
+  const pushLine = (line) => setHistory((prev) => [...prev, line]);
 
-  const handleCommand = (cmd: string) => {
+  const handleCommand = (cmd) => {
     const trimmed = cmd.trim();
     if (!trimmed) return;
 
@@ -100,8 +89,8 @@ const TerminalMode = ({ setTerminalMode, setUiType }: Props) => {
           component: (
             <ul className="list-disc ml-4">
               <strong> Available themes: </strong>
-              {Object.keys(terminalThemes).map((theme) => (
-                <li key={theme}>{theme}</li>
+              {Object.keys(terminalThemes).map((themeName) => (
+                <li key={themeName}>{themeName}</li>
               ))}
             </ul>
           ),

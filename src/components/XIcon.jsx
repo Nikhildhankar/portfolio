@@ -1,6 +1,6 @@
 import React from 'react';
 
-const XIcon = ({ size = 24, color = "currentColor", className, ...props }: any) => {
+const XIcon = ({ size = 24, color = "currentColor", className, ...props }) => {
   const { strokeWidth, ...rest } = props;
   return (
     <svg 

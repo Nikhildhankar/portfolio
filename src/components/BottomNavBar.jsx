@@ -16,12 +16,7 @@ const navItems = [
   { name: "Contact", id: "contact", icon: ContactRound },
 ];
 
-type Props = {
-  forcedTab?: string;
-  setForcedTab?: (tab: string) => void;
-};
-
-const BottomNavBar = ({ forcedTab, setForcedTab }: Props) => {
+const BottomNavBar = ({ forcedTab, setForcedTab }) => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
@@ -49,7 +44,7 @@ const BottomNavBar = ({ forcedTab, setForcedTab }: Props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [forcedTab]);
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });

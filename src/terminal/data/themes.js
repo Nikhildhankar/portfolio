@@ -1,11 +1,4 @@
-export type Theme = {
-  name: string;
-  bg: string;
-  text: string;
-  accent: string;
-};
-
-export const terminalThemes: Record<string, Theme> = {
+export const terminalThemes = {
   dracula: {
     name: "Dracula",
     bg: "bg-[#282a36]",

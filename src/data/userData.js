@@ -33,7 +33,7 @@ export const fetchData = [
   { label: "Degree", value: "B.Tech CSE (2021-2025) @ SSTC" },
   { label: "CGPA", value: "8.33 / 10.0" },
   { label: "Backend", value: "Python 3.12, FastAPI, Flask" },
-  { label: "Frontend", value: "React, TypeScript, TailwindCSS" },
+  { label: "Frontend", value: "React, JavaScript, TailwindCSS" },
   { label: "Database", value: "PostgreSQL, MySQL" },
   { label: "DevOps", value: "Docker, Git, Postman, CI/CD" },
   { label: "Automation", value: "Selenium, Playwright" },
@@ -56,7 +56,6 @@ export const skills = [
     items: [
       { name: "React", icon: "https://cdn.simpleicons.org/react" },
       { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript" },
-      { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
       { name: "HTML5", icon: "https://cdn.simpleicons.org/html5" },
       { name: "CSS3", icon: "https://cdn.simpleicons.org/css3" },
       { name: "TailwindCSS", icon: "https://cdn.simpleicons.org/tailwindcss" },

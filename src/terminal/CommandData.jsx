@@ -2,7 +2,7 @@ import React from "react";
 import { ExternalLink, Github, Linkedin } from "lucide-react";
 import { contactItems, skills, projectData, personalInfo } from "../data/userData";
 
-export const getCommandData = (setTerminalMode: (v: boolean) => void): Record<string, React.ReactNode> => ({
+export const getCommandData = (setTerminalMode) => ({
   whoami: (
     <>
       <div>Welcome, Guest 👋</div>

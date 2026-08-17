@@ -8,7 +8,7 @@ import { projectData } from "../data/userData";
 
 const categories = Array.from(new Set(projectData.map((p) => p.category)));
 
-const Projects = ({ limit }: { limit?: number }) => {
+const Projects = ({ limit }) => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredProjects = projectData.filter(

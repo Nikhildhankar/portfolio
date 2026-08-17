@@ -26,7 +26,7 @@ const items = [
   "Skills",
   "Fetch",
   "Contact",
-] as const;
+];
 const paths = ["/", "/about", "/projects", "/skills", "/fetch", "/contact"];
 
 const sections = {
@@ -65,7 +65,7 @@ const DiscMenu = () => {
   }, [location]);
 
   // Rotate section and update URL
-  const rotateTo = (dir: "left" | "right") => {
+  const rotateTo = (dir) => {
     const newIndex =
       dir === "left"
         ? (currentIndex - 1 + items.length) % items.length
@@ -75,7 +75,7 @@ const DiscMenu = () => {
     navigate(paths[newIndex]);
   };
 
-  const handleDragEnd = (_: any, info: { offset: { x: number } }) => {
+  const handleDragEnd = (_, info) => {
     if (info.offset.x > 50) {
       rotateTo("left");
     } else if (info.offset.x < -50) {

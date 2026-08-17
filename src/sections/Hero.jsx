@@ -3,12 +3,7 @@ import { Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { personalInfo, contactItems } from "../data/userData";
 
-type HeroProps = {
-  onTabChange?: (tab: string) => void;
-  uiType?: "landing" | "modular";
-};
-
-const Hero = ({ onTabChange, uiType }: HeroProps) => {
+const Hero = ({ onTabChange, uiType }) => {
   return (
     <motion.section
       id="home"
