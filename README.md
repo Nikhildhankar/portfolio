@@ -5,7 +5,7 @@
   </p>
   <p align="center">
     <a href="https://nikhildhankar.github.io/portfolio/">
-      <img src="https://img.shields.io/badge/Live%20Demo-View%20Portfolio-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
+      <img src="https://img.shields.io/badge/🌐_Live_Demo-https%3A%2F%2Fnikhildhankar.github.io%2Fportfolio%2F-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
     </a>
     <a href="https://github.com/Nikhildhankar/portfolio">
       <img src="https://img.shields.io/badge/Maintained%3F-Yes-emerald?style=for-the-badge" alt="Maintained" />
@@ -18,9 +18,15 @@
 
 ---
 
+## 🔗 Live Portfolio
+
+👉 **Live Demo:** **[https://nikhildhankar.github.io/portfolio/](https://nikhildhankar.github.io/portfolio/)**
+
+---
+
 ## 🌟 Overview
 
-Welcome to the repository for **Nikhil Dhankar's** personal portfolio website. Built with **React**, **JavaScript**, **Vite**, and **Tailwind CSS**, this portfolio showcases full-stack and backend projects, technical skills, career timeline, and an interactive CLI terminal experience.
+Welcome to the repository for **Nikhil Dhankar's** personal portfolio website. Built with **React**, **JavaScript (ESM/JSX)**, **Vite**, and **Tailwind CSS**, this portfolio showcases full-stack and backend projects, technical skills, career timeline, and an interactive CLI terminal experience.
 
 ### ✨ Key Features
 - 🚀 **Interactive Terminal Mode**: Switch between graphical UI and an interactive command-line interface with custom commands (`whoami`, `about`, `projects`, `skills`, `themes`, `contact`).
@@ -75,13 +81,14 @@ npm run preview
 
 ## 📬 Contact & Connect
 
-- **Email**: [nikhildhankar85@gmail.com](mailto:nikhildhankar85@gmail.com)
-- **LinkedIn**: [linkedin.com/in/nikhildhankar-827728233](https://www.linkedin.com/in/nikhildhankar-827728233)
-- **GitHub**: [github.com/nikhildhankar](https://github.com/nikhildhankar)
-- **Location**: Bhilai, Chhattisgarh, India
+- 🌐 **Live Website**: [https://nikhildhankar.github.io/portfolio/](https://nikhildhankar.github.io/portfolio/)
+- 📧 **Email**: [nikhildhankar85@gmail.com](mailto:nikhildhankar85@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/nikhildhankar-827728233](https://www.linkedin.com/in/nikhildhankar-827728233)
+- 🐙 **GitHub**: [github.com/nikhildhankar](https://github.com/nikhildhankar)
+- 📍 **Location**: Bhilai, Chhattisgarh, India
 
 ---
 
 <p align="center">
-  Designed & Built with ❤️ by <strong>Nikhil Dhankar</strong>
+  Designed & Built with ❤️ by <strong><a href="https://nikhildhankar.github.io/portfolio/">Nikhil Dhankar</a></strong>
 </p>
